@@ -1,7 +1,7 @@
 {
   "name": "joegrammer-theme",
-  "displayName": "Joegrammer Theme",
-  "description": "Theme pack for the average (joe) programmer",
+  "displayName": "Joegrammer Theme (DEV)",
+  "description": "Development Branch for Theme pack for the average (joe) programmer",
   "version": "0.0.4",
   "publisher": "AndrewStone",
   "engines": {

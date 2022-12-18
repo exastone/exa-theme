@@ -39,6 +39,8 @@
 		"editorGroupHeader.tabsBackground": "#3C5685",
 		"editorGroupHeader.noTabsBackground": "#3C5685",
 		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
+		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
+		"gitDecoration.stageModifiedResourceForeground": "#0FFF95",
 		"tab.activeBackground": "#3C5685",
 		"tab.activeBorder": "#FFCA14",
 		"tab.activeForeground": "#F2D488",
