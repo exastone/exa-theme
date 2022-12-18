@@ -23,8 +23,8 @@ You can author your README using Visual Studio Code. Here are some useful editor
 
 *   Black Ice (dark blue theme)
 *   Envy (dark green theme)
-*   Freeze (light grey/blue)
+*   Freeze (med/light-ish blue theme)
 
 ### In Development
 
-*   Proper Syntax Highlighting (especially for Freeze theme)
+*   Syntax Highlightings
