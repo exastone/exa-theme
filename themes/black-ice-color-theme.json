@@ -16,10 +16,12 @@
 		"editorLineNumber.foreground": "#d8dee974",
 		"editorLineNumber.activeForeground": "#fe820f",
 		"editorCursor.foreground": "#fe820f",
-		"editor.lineHighlightBackground": "#1E2749",
-		"editor.selectionBackground": "#D8DEE945",
+		"editor.lineHighlightBackground": "#132145",
+		// this matches findMatch*
+		"editor.selectionBackground": "#9C004E80",
+		"editor.selectionHighlightBackground": "#02088780",
+		// 
 		"editor.findMatchBackground": "#9C004E",
-		// "editor.findMatchBorder": "#ff0000",
 		"editor.findMatchHighlightBackground": "#020887", // all matches
 		"editor.findRangeHighlightBackground": "#BF616A90",
 		// "editor.findMatchHighlightBorder": "#5E81AC",
@@ -27,9 +29,8 @@
 		"searchEditor.textInputBorder": "#F2E3D545",
 		"editorOverviewRuler.background": "#13214545",
 		"editor.wordHighlightBackground": "#1E3040", // only works with code
-		"editor.selectionHighlightBackground": "#2B4162",
-		"editor.foldBackground": "#132145",
-		"editor.hoverHighlightBackground": "#5C80BC90",
+		"editor.foldBackground": "#181b2680",
+		"editor.hoverHighlightBackground": "#5F758E80",
 		// [!] EditorWidgets
 		"editorWidget.background": "#132145e6",
 		"editorWidget.foreground": "#ECEFF4",
@@ -51,6 +52,7 @@
 		"list.hoverForeground": "#ECEFF4",
 		"list.inactiveSelectionBackground": "#1D3354",
 		"quickInputList.focusBackground": "#0c1426bb",
+		"list.warningForeground": "#F0955C",
 		// [!] Input
 		"input.background": "#132145",
 		"input.foreground": "#ECEFF4cc",
@@ -159,6 +161,10 @@
 		"terminal.inactiveSelectionBackground": "#D8DEE934",
 		"terminalCommandDecoration.successBackground": "#00ff5551",
 		"terminalCommandDecoration.errorBackground": "#ff0000",
+		// [!] 
+		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
+		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
+		"gitDecoration.stageModifiedResourceForeground": "#0FFF95",
 	},
 	"tokenColors": [
 		{
@@ -1015,27 +1021,6 @@
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown headings",
-			"scope": "entity.name.section.markdown",
-			"settings": {
-				"foreground": "#d8dee9"
-			}
-		},
-		{
-			"name": "[VSCODE-CUSTOM] Markdown heading Punctuation Definition",
-			"scope": "punctuation.definition.heading.markdown",
-			"settings": {
-				"foreground": "#d8dee9"
-			}
-		},
-		{
-			"name": "punctuation.definition.list.begin.markdown",
-			"scope": "punctuation.definition.list.begin.markdown",
-			"settings": {
-				"foreground": "#d8dee9"
-			}
-		},
-		{
 			"name": "[VSCODE-CUSTOM] Markdown heading setext",
 			"scope": "markup.heading.setext",
 			"settings": {
@@ -1071,37 +1056,12 @@
 			}
 		},
 		{
-			"name": "[VSCODE-CUSTOM] Markdown Punctuation Definition String",
-			"scope": [
-				"punctuation.definition.string.begin.markdown",
-				"punctuation.definition.string.end.markdown",
-				"punctuation.definition.metadata.markdown"
-			],
-			"settings": {
-				"foreground": "#d8dee9"
-			}
-		},
-		{
 			"name": "beginning.punctuation.definition.list.markdown",
 			"scope": [
 				"beginning.punctuation.definition.list.markdown"
 			],
 			"settings": {
 				"foreground": "#d8dee9"
-			}
-		},
-		{
-			"name": "[VSCODE-CUSTOM] Markdown Punctuation Definition Link",
-			"scope": "punctuation.definition.metadata.markdown",
-			"settings": {
-				"foreground": "#d8dee9"
-			}
-		},
-		{
-			"name": "[VSCODE-CUSTOM] Markdown Underline Link/Image",
-			"scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
-			"settings": {
-				"foreground": "#91beea"
 			}
 		},
 		{
@@ -1995,6 +1955,70 @@
 			"scope": "markup.italic.markdown",
 			"settings": {
 				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markdown & TOML Punctuation Definition",
+			"scope": [
+				"punctuation.definition.heading.markdown",
+				"punctuation.definition.list.begin.markdown",
+				"punctuation.definition.link.title.begin.markdown",
+				"punctuation.definition.link.title.end.markdown",
+				"punctuation.definition.metadata.markdown",
+				"punctuation.definition.constant.markdown",
+				"punctuation.definition.link.description.begin.markdown",
+				"punctuation.definition.link.description.end.markdown",
+				"meta.separator.markdown",
+				"punctuation.definition.table.toml"
+			],
+			"settings": {
+				"foreground": "#F2D488"
+			}
+		},
+		{
+			"name": "Markdown - Underline links",
+			"scope": [
+				"markup.underline.link.markdown",
+				"markup.underline.link.image.markdown",
+				"meta.link.reference.def.markdown"
+			],
+			"settings": {
+				"foreground": "#6EBCBB"
+			}
+		},
+		{
+			"name": "Markdown & TOML - headings",
+			"scope": [
+				"entity.name.section.markdown",
+				"support.type.property-name.table.toml"
+			],
+			"settings": {
+				"foreground": "#81A1C1"
+			}
+		},
+		{
+			"name": "",
+			"scope": [
+				"meta.paragraph.markdown"
+			],
+			"settings": {
+				"foreground": "#D8DEE9"
+			}
+		},
+		{
+			"name": "",
+			"scope": [
+				"markup.fenced_code.block.markdown"
+			],
+			"settings": {
+				"foreground": "#B07156"
+			}
+		},
+		{
+			"name": "",
+			"scope": "markup.strikethrough.markdown",
+			"settings": {
+				"foreground": "#BA160C"
 			}
 		}
 	]
