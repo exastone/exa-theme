@@ -20,7 +20,7 @@
 		"editorGroupHeader.tabsBackground": "#012622",
 		"editorGroupHeader.noTabsBackground": "#012622",
 		"editor.lineHighlightBackground": "#012622",
-		"editor.lineHighlightBorder": "#8F754F",
+		"editor.lineHighlightBorder": "#8F754F80",
 		"editorLineNumber.activeForeground": "#fe820f",
 		"editorCursor.foreground": "#fe820f",
 		"editorWidget.background": "#012622f0",
