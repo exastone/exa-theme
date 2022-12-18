@@ -110,6 +110,8 @@
 		"inputValidation.infoBackground": "#395c8aF0",
 		"inputValidation.infoBorder": "#31476EF0",
 		// 
+		"inputValidation.errorBackground": "#ba445080",
+		// 
 		"panel.background": "#3C5685",
 		"panelTitle.activeForeground": "#F2D488",
 		"list.hoverBackground": "#253B7Aa0",
@@ -163,12 +165,40 @@
 			}
 		},
 		{
+			"name": "Markdown, TOML - Headings and Table Definitions",
 			"scope": [
 				"punctuation.definition.heading.markdown",
 				"punctuation.definition.list.begin.markdown",
-				"markup.underline.link.markdown",
-				"meta.separator.markdown"
+				"punctuation.definition.link.title.begin.markdown",
+				"punctuation.definition.link.title.end.markdown",
+				"meta.separator.markdown",
+				"support.type.property-name.table.toml",
+				"punctuation.definition.table.toml",
+				"support.type.property-name.table.toml"
 			],
+			"settings": {
+				"foreground": "#F2D488"
+			}
+		},
+		{
+			"name": "JSON - Array Begin and End '[' & ']'",
+			"scope": [
+				"punctuation.definition.array.begin.json.comments",
+				"punctuation.definition.array.end.json.comments",
+			],
+			"settings": {
+				"foreground": "#F2D488"
+			}
+		},
+		{
+			"name": "TOML - Escape Character",
+			"scope": "constant.character.escape.toml",
+			"settings": {
+				"foreground": "#BEFFC7"
+			}
+		},
+		{
+			"scope": "markup.underline.link.markdown",
 			"settings": {
 				"foreground": "#D7C9AA"
 			}

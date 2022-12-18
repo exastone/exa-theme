@@ -19,6 +19,13 @@
 		"statusBar.noFolderBackground": "#254531",
 		"editorGroupHeader.tabsBackground": "#012622",
 		"editorGroupHeader.noTabsBackground": "#012622",
+		// [!] Tabs
+		"tab.inactiveBackground": "#012622",
+		"tab.activeBackground": "#012622",
+		"tab.activeBorder": "#D7B377",
+		"tab.activeModifiedBorder": "#1446A0",
+		"tab.inactiveModifiedBorder": "#1446A0",
+		// 
 		"editor.lineHighlightBackground": "#012622",
 		"editor.lineHighlightBorder": "#8F754F80",
 		"editorLineNumber.activeForeground": "#fe820f",
@@ -36,19 +43,19 @@
 		"dropdown.border": "#7B7554",
 		"settings.focusedRowBackground": "#012622",
 		"settings.rowHoverBackground": "#1F3330",
-		"tab.activeBorder": "#D7B377",
-		"tab.activeModifiedBorder": "#1446A0",
-		"tab.inactiveModifiedBorder": "#1446A0",
 		"panelTitle.activeBorder": "#D7B377",
 		"panelTitle.activeForeground": "#D7B377",
 		// "editor.rangeHighlightBackground": "#203B27",
 		"editor.rangeHighlightBorder": "#8F754F",
 		// "editor.hoverHighlightBackground": "#007acc90",
-		"editor.hoverHighlightBackground": "#5C80BC90",
+		"editor.hoverHighlightBackground": "#5C80BC60",
 		// "editor.rangeHighlightBackground": "#ff00ff",
-		"editor.selectionHighlightBackground": "#007acc40",
+		// [!] Active and Passive matching
+		"editor.selectionBackground": "#BA160C70",
+		"editor.selectionHighlightBackground": "#1446A070",
 		"editor.findMatchBackground": "#BA160C",
-		"editor.findMatchHighlightBackground": "#007acca0",
+		"editor.findMatchHighlightBackground": "#1446A0a0",
+		// 
 		"textLink.foreground": "#BEFFC7",
 		"textLink.activeForeground": "#D7B377",
 		"quickInputList.focusBackground": "#004346",
@@ -58,7 +65,11 @@
 		"list.inactiveSelectionBackground": "#003B36",
 		"minimap.background": "#1B2D2Ad0",
 		"keybindingLabel.border": "#7B7554",
-		"keybindingLabel.bottomBorder": "#7B7554"
+		"keybindingLabel.bottomBorder": "#7B7554",
+		// [!] Git
+		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
+		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
+		"gitDecoration.stageModifiedResourceForeground": "#0FFF95",
 	},
 	"tokenColors": [
 		{
@@ -282,6 +293,16 @@
 			],
 			"settings": {
 				"foreground": "#C7BBAD"
+			}
+		},
+		{
+			"name": "JSON - Array Begin and End '[' & ']'",
+			"scope": [
+				"punctuation.definition.array.begin.json.comments",
+				"punctuation.definition.array.end.json.comments",
+			],
+			"settings": {
+				"foreground": "#F2E2BA"
 			}
 		},
 		{
@@ -605,6 +626,32 @@
 		// 	}
 		// },
 		{
+			"name": "TOML, Markdown - Section Name & Table",
+			"scope": [
+				"entity.name.section.markdown",
+				"support.type.property-name.table.toml",
+			],
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "TOML - Table Definition",
+			"scope": [
+				"punctuation.definition.table.toml"
+			],
+			"settings": {
+				"foreground": "#F2E2BA"
+			},
+		},
+		{
+			"name": "TOML - Escape Character",
+			"scope": "constant.character.escape.toml",
+			"settings": {
+				"foreground": "#0FFF95a0"
+			}
+		},
+		{
 			"name": "Markdown - Plain",
 			"scope": [
 				"text.html.markdown",
@@ -633,14 +680,33 @@
 			}
 		},
 		{
-			"name": "Markdown - Heading",
+			"name": "Markdown - Punctuation & Heading Definition",
 			"scope": [
-				"markdown.heading",
-				"markup.heading | markup.heading entity.name",
-				"markup.heading.markdown punctuation.definition.heading.markdown"
+				"punctuation.definition.heading.markdown",
+				"punctuation.definition.list.begin.markdown",
+				"punctuation.definition.link.title.begin.markdown",
+				"punctuation.definition.link.title.end.markdown",
+				"markup.heading.setext",
+				"meta.separator.markdown",
 			],
 			"settings": {
-				"foreground": "#C3E88D"
+				"foreground": "#F2E2BA"
+			}
+		},
+		{
+			"name": "Markdown - Paragraph",
+			"scope": [
+				"meta.paragraph.markdown",
+			],
+			"settings": {
+				"foreground": "#BFBDC1"
+			}
+		},
+		{
+			"name": "Markdown - Link",
+			"scope": "string.other.link.title.markdown",
+			"settings": {
+				"foreground": "#B48EAD"
 			}
 		},
 		{
@@ -705,15 +771,6 @@
 			],
 			"settings": {
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Markdown - Link",
-			"scope": [
-				"string.other.link.title.markdown"
-			],
-			"settings": {
-				"foreground": "#82AAFF"
 			}
 		},
 		{

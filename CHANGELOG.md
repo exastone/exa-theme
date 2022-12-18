@@ -24,7 +24,7 @@ Improved git decorations (affects file names in tabs and lists)
 - gitDecoration.modifiedResourceForeground -> #BEFFC7
 - gitDecoration.stageModifiedResourceForeground -> #0FFF95
 
-Improved syntax highlighting for Markdown
+Improved syntax highlighting for Markdown & TOML
 
 ### Black Ice
 
@@ -37,7 +37,7 @@ Improved git decorations (affects file names in tabs and lists)
 
 - gitDecoration.untrackedResourceForeground -> #CBEFB6
 - gitDecoration.modifiedResourceForeground -> #BEFFC7
-- gitDecoration.stageModifiedResourceForeground -> 0FFF95
+- gitDecoration.stageModifiedResourceForeground -> #0FFF95
 
 Other changes
 
@@ -45,5 +45,23 @@ Other changes
 - editor.lineHighlightBackground ->  #132145
 - editor.hoverHighlightBackground  -> #5F758E80
 - list.warningForeground -> #F0955C
+
+Improved syntax highlighting for Markdown & TOML
+
+### Envy
+
+Passive and active matching now match
+
+- editor.selectionBackground ->  #BA160C70
+- editor.selectionHighlightBackgroun ->  #1446A070
+- editor.findMatchBackground ->  #BA160C
+- editor.findMatchHighlightBackgroun ->  #1446A0a0
+
+Improved git decorations (affects file names in tabs and lists)
+
+- gitDecoration.untrackedResourceForeground -> #CBEFB6
+- gitDecoration.modifiedResourceForeground -> #BEFFC7
+- gitDecoration.stageModifiedResourceForeground -> #0FFF95
+
 
 Improved syntax highlighting for Markdown & TOML
