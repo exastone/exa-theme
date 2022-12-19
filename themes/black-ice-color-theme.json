@@ -19,10 +19,9 @@
 		"editor.lineHighlightBackground": "#132145",
 		// this matches findMatch*
 		"editor.selectionBackground": "#9C004E80",
-		"editor.selectionHighlightBackground": "#02088780",
-		// 
+		"editor.selectionHighlightBackground": "#1446A070",
 		"editor.findMatchBackground": "#9C004E",
-		"editor.findMatchHighlightBackground": "#020887", // all matches
+		"editor.findMatchHighlightBackground": "#1446A0a0", // all matches
 		"editor.findRangeHighlightBackground": "#BF616A90",
 		// "editor.findMatchHighlightBorder": "#5E81AC",
 		"searchEditor.findMatchBackground": "#4900e8",
@@ -31,6 +30,17 @@
 		"editor.wordHighlightBackground": "#1E3040", // only works with code
 		"editor.foldBackground": "#181b2680",
 		"editor.hoverHighlightBackground": "#5F758E80",
+		// [!] Editor Gutter, Scroll Bar, Minimap
+		"editorGutter.addedBackground": "#0FFF95",
+		"editorGutter.modifiedBackground": "#267ffd",
+		"editorOverviewRuler.modifiedForeground": "#267ffd",
+		"minimap.background": "#132145cd",
+		"minimap.foregroundOpacity": "#000000ff",
+		"minimap.selectionHighlight": "#D81E5Ba0",
+		"minimap.findMatchHighlight": "#5C80BCa0",
+		"minimapSlider.background": "#00000050",
+		"scrollbarSlider.background": "#D8DEE920",
+		"scrollbarSlider.hoverBackground": "#D8DEE930",
 		// [!] EditorWidgets
 		"editorWidget.background": "#132145e6",
 		"editorWidget.foreground": "#ECEFF4",
@@ -113,9 +123,6 @@
 		"bookmarks.lineBackground": "#253B7A34",
 		"bookmarks.overviewRuler": "#3B7CF289",
 		"bookmarks.lineBorder": "#F2E3D545",
-		// [!] Minimap
-		"minimap.background": "#132145cd",
-		"minimap.foregroundOpacity": "#000000e0",
 		// [!] Panel
 		"panel.background": "#0c1426",
 		"panelTitle.activeForeground": "#F2D488",
@@ -161,10 +168,12 @@
 		"terminal.inactiveSelectionBackground": "#D8DEE934",
 		"terminalCommandDecoration.successBackground": "#00ff5551",
 		"terminalCommandDecoration.errorBackground": "#ff0000",
-		// [!] 
+		// [!] Git
 		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
 		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
 		"gitDecoration.stageModifiedResourceForeground": "#0FFF95",
+		// 
+		"markdown.extension.editor.codeSpan.border": "#00000000",
 	},
 	"tokenColors": [
 		{
@@ -997,18 +1006,51 @@
 				"foreground": "#b48ead"
 			}
 		},
+		// [!] Markdown
 		{
-			"name": "Bold",
-			"scope": "punctuation.definition.bold",
+			"name": "Markdown - Bold",
+			"scope": [
+				"punctuation.definition.bold.markdown",
+				"markup.bold.markdown"
+			],
 			"settings": {
-				"foreground": "#7bb296"
+				"foreground": "#D9E5FF",
+				"fontStyle": "bold"
 			}
 		},
 		{
-			"name": "markup Italic",
-			"scope": "markup.italic, punctuation.definition.italic,todo.emphasis",
+			"name": "Markdown - Italic",
+			"scope": [
+				"punctuation.definition.italic.markdown",
+				"markup.italic.markdown"
+			],
 			"settings": {
-				"foreground": "#91beea"
+				"foreground": "#C2C8DF",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markdown - Inline Raw",
+			"scope": "markup.inline.raw.string.markdown",
+			"settings": {
+				"foreground": "#ff9100"
+			}
+		},
+		{
+			"name": "Markdown - Code Blocks",
+			"scope": [
+				"markup.raw.block.markdown",
+				"markup.fenced_code.block.markdown"
+			],
+			"settings": {
+				"foreground": "#DD614A"
+			}
+		},
+		{
+			"name": "Markdown - Strikethrough",
+			"scope": "markup.strikethrough.markdown",
+			"settings": {
+				"foreground": "#f45b58"
 			}
 		},
 		{
@@ -1023,27 +1065,6 @@
 			"scope": "markup.heading.setext",
 			"settings": {
 				"foreground": "#d8dee9e7"
-			}
-		},
-		{
-			"name": "[VSCODE-CUSTOM] Markdown Punctuation Definition Bold",
-			"scope": "punctuation.definition.bold.markdown",
-			"settings": {
-				"foreground": "#b48ead"
-			}
-		},
-		{
-			"name": "[VSCODE-CUSTOM] Markdown Inline Raw",
-			"scope": "markup.inline.raw.markdown",
-			"settings": {
-				"foreground": "#c7bbad"
-			}
-		},
-		{
-			"name": "[VSCODE-CUSTOM] Markdown Inline Raw",
-			"scope": "markup.inline.raw.string.markdown",
-			"settings": {
-				"foreground": "#c7bbad"
 			}
 		},
 		{
@@ -1431,6 +1452,40 @@
 			],
 			"settings": {
 				"foreground": "#91beea"
+			}
+		},
+		// [!] Javascript
+		{
+			"name": "Javascript - Punctuation",
+			"scope": [
+				"punctuation.definition.parameters.begin.js",
+				"punctuation.definition.parameters.end.js",
+				"punctuation.terminator.statement.js",
+				"punctuation.definition.block.js",
+				"punctuation.accessor.js",
+				"meta.brace.round.js"
+			],
+			"settings": {
+				"foreground": "#D8DEE9CD"
+			}
+		},
+		{
+			"name": "Javascript - Storage Type",
+			"scope": [
+				"storage.type.js",
+				"storage.type.function.js",
+			],
+			"settings": {
+				"foreground": "#DA4167"
+			}
+		},
+		{
+			"name": "Javascript - Control Flow",
+			"scope": [
+				"keyword.control.flow.js"
+			],
+			"settings": {
+				"foreground": "#DA4167"
 			}
 		},
 		{
@@ -1967,6 +2022,10 @@
 				"punctuation.definition.link.description.begin.markdown",
 				"punctuation.definition.link.description.end.markdown",
 				"meta.separator.markdown",
+				"punctuation.definition.quote.begin.markdown",
+				"punctuation.definition.quote.end.markdown",
+				"punctuation.definition.markdown",
+				"fenced_code.block.language.markdown",
 				"punctuation.definition.table.toml"
 			],
 			"settings": {
@@ -2003,21 +2062,5 @@
 				"foreground": "#D8DEE9"
 			}
 		},
-		{
-			"name": "",
-			"scope": [
-				"markup.fenced_code.block.markdown"
-			],
-			"settings": {
-				"foreground": "#B07156"
-			}
-		},
-		{
-			"name": "",
-			"scope": "markup.strikethrough.markdown",
-			"settings": {
-				"foreground": "#BA160C"
-			}
-		}
 	]
 }
