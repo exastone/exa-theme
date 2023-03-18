@@ -138,7 +138,7 @@
 		"editorLink.activeForeground": "#F2D488",
 		"debugConsole.sourceForeground": "#ECEFF4a0",
 		"debugConsole.infoForeground": "#D8DEE9",
-		"debugConsole.errorForeground": "#ff00ff",
+		"debugConsole.errorForeground": "#E8C1D4",
 		"debugConsole.warningForeground": "#00ffff",
 		// [!] Terminal
 		"terminal.ansiBlack": "#000000",
@@ -209,7 +209,10 @@
 		"macro": "#EFB294",
 		"method": "#99C3F6",
 		"method.static.defaultLibrary.library.trait": "#ACC4C7",
-		"method.defaultLibrary": "#99C3F6",
+		"method.defaultLibrary": {
+			"foreground": "#99C3F6",
+			"italic": true
+		},
 		"variable": "#C6CBD5",
 		"variable.defaultLibrary": "#D2CAB7",
 		"variable.reference": {
