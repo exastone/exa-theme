@@ -86,6 +86,36 @@
 				"foreground": "#7E846B"
 			}
 		},
+		// [!] Rust
+		{
+			"name": "Rust Punctuations",
+			"scope": [
+				"keyword.operator.key-value.rust",
+				"keyword.operator.access.dot.rust",
+				"keyword.operator.namespace.rust"
+			],
+			"settings": {
+				"foreground": "#C2C8DF"
+			}
+		},
+		{
+			"name": "Rust Storage modifier",
+			"scope": [
+				"storage.modifier.mut.rust"
+			],
+			"settings": {
+				"foreground": "#BEA7E5"
+			}
+		},
+		{
+			"name": "Rust - self",
+			"scope": [
+				"variable.language.self.rust",
+			],
+			"settings": {
+				"foreground": "#4CB5AE"
+			}
+		},
 		{
 			"name": "Variables",
 			"scope": [
@@ -241,9 +271,17 @@
 			}
 		},
 		{
+			"name": "Number",
+			"scope": [
+				"constant.numeric"
+			],
+			"settings": {
+				"foreground": "#E9BCB7"
+			}
+		},
+		{
 			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
 			"scope": [
-				"constant.numeric",
 				"constant.language",
 				"support.constant",
 				"constant.character",
