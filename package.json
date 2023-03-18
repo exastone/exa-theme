@@ -1,7 +1,7 @@
 {
   "name": "joegrammer-theme",
-  "displayName": "Joegrammer Theme (DEV)",
-  "description": "Development Branch for Theme pack for the average (joe) programmer",
+  "displayName": "Joegrammer Theme",
+  "description": "Theme pack for the average (joe) programmer",
   "version": "0.0.10",
   "publisher": "AndrewStone",
   "engines": {
@@ -19,18 +19,18 @@
     "themes": [
       {
         "label": "Freeze",
-        "uiTheme": "vs-dark",
+        "uiTheme": "vs",
         "path": "./themes/freeze-color-theme.json"
-      },
-      {
-        "label": "Envy",
-        "uiTheme": "vs-dark",
-        "path": "./themes/envy-color-theme.json"
       },
       {
         "label": "Black Ice",
         "uiTheme": "vs-dark",
         "path": "./themes/black-ice-color-theme.json"
+      },
+      {
+        "label": "Envy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/envy-color-theme.json"
       }
     ]
   },
