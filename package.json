@@ -19,7 +19,7 @@
     "themes": [
       {
         "label": "Freeze",
-        "uiTheme": "vs",
+        "uiTheme": "vs-dark",
         "path": "./themes/freeze-color-theme.json"
       },
       {

@@ -64,4 +64,8 @@ Improved git decorations (affects file names in tabs and lists)
 - gitDecoration.stageModifiedResourceForeground -> #0FFF95
 
 
-Improved syntax highlighting for Markdown & TOML
+### [03/16/23]
+
+- Black Ice changed to use semantic highlighting
+- Freeze changed to use semantic highlighting
+- too many changes to list
