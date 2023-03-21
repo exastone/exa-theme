@@ -237,6 +237,7 @@
 			"italic": true
 		},
 		"interface": "#A9E3B1",
+		"decorator": "#A9E3B1",
 		"tomlArrayKey": "#D7C9AA",
 		"tomlTableKey": "#D7C9AA",
 	},
