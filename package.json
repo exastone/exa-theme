@@ -7,6 +7,7 @@
   "engines": {
     "vscode": "^1.72.0"
   },
+  "preview": true,
   "categories": [
     "Themes",
     "Other"
@@ -37,15 +38,17 @@
   "keywords": [
     "joegrammer",
     "theme",
-    "light",
     "dark",
     "vscode"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exastone/joegrammer-theme"
+  },
   "__metadata": {
     "id": "24af2ba6-b996-4336-a1a4-772cdfd98608",
     "publisherDisplayName": "Andrew Stone",
     "publisherId": "5a5cbcbf-7df2-4cb3-a046-092fc34be666",
-    "isPreReleaseVersion": true,
-    "preview": true
+    "isPreReleaseVersion": true
   }
 }
