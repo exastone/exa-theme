@@ -409,6 +409,18 @@
 			}
 		},
 		{
+			"scope": "string.other.link.title.markdown",
+			"settings": {
+				"foreground": "#B48EAD"
+			}
+		},
+		{
+			"scope": "markup.underline.link.markdown",
+			"settings": {
+				"foreground": "#88C0D0",
+			}
+		},
+		{
 			"scope": "punctuation.definition.markdown",
 			"settings": {
 				"foreground": "#ffffff",
