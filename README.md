@@ -2,14 +2,17 @@
 
 ### 3 Themes Included
 
-*   Black Ice (dark blue theme) - uses semantic highlighting
+*   Black Ice (dark blue theme) semantic highlighting 
 *   Envy (dark green theme)
-*   Freeze (med/light-ish blue theme) - uses semantic highlighting
+*   Freeze (med blue theme) semantic highlighting
 
-![Black Ice](/screenshots/black-ice.png)
-
-
-![Envy](/screenshots/envy.png)
+![Combined Theme Preview](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/combined.png?raw=true)
 
 
-![Freeze](/screenshots/freeze.png)
+![Black Ice](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/black-ice.png?raw=true)
+
+
+![Envy](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/envy.png?raw=true)
+
+
+![Freeze](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/freeze.png?raw=true)
