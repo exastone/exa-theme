@@ -1,5 +1,5 @@
 {
-	"name": "Black Ice",
+	"name": "Tundra Dusk",
 	"colors": {
 		// "welcomePage.background": "#0c1426a0",
 		"icon.foreground": "#F2D488",
@@ -202,7 +202,12 @@
 			"italic": true
 		},
 		"function": "#91beea",
-		"struct": "#FD788B",
+		"function.builtin": {
+			"italic": true
+		},
+		// "struct": "#FD788B",
+		"struct": "#E76D7E",
+		"class": "#E76D7E",
 		"enum": "#99B19C",
 		"enumMember": "#C4BFB6",
 		"property": "#938EC0",
@@ -213,11 +218,18 @@
 		"macro": "#E66D53",
 		"method": "#91beea",
 		// "method.static.defaultLibrary.library.trait": "#ACC4C7",
+		"method.builtin": {
+			"foreground": "#919FEB",
+			"italic": true
+		},
 		"method.defaultLibrary": {
 			"foreground": "#91beeae0",
 			"italic": true
 		},
 		"variable": "#D9E5FFc0",
+		"variable.builtin": {
+			"italic": true
+		},
 		"variable.defaultLibrary": "#ACC4C7",
 		"variable.declaration.static.constant.public": {
 			"foreground": "#00B591"
@@ -239,8 +251,6 @@
 			"italic": true
 		},
 		"interface": "#09C473",
-		// "tomlArrayKey": "#D7C9AA",
-		"tomlTableKey": "#81A1C1",
 		"unresolvedReference": {
 			"foreground": "#FDB0BAa0",
 			"italic": true,
@@ -254,7 +264,9 @@
 			"foreground": "#91BEEA",
 			"italic": true
 		},
-		"property.classScope:cpp": "#88C0D0"
+		"property.classScope:cpp": "#88C0D0",
+		"tomlTableKey": "#81A1C1",
+		"tomlArrayKey": "#81A1C1"
 	},
 	"tokenColors": [
 		{
@@ -316,7 +328,8 @@
 			"name": "Special Operators",
 			"scope": [
 				"keyword.operator.range.rust",
-				"keyword.operator.arrow.fat.rust"
+				"keyword.operator.arrow.fat.rust",
+				"punctuation.definition.character-class.regexp"
 			],
 			"settings": {
 				"foreground": "#C8C098"
@@ -349,10 +362,17 @@
 				"keyword.declaration.trait.rust",
 				"storage.type.rust",
 				"storage.type.function.python",
-				"keyword.operator.new.cpp"
+				"keyword.operator.new.cpp",
+				"storage.type.ts"
 			],
 			"settings": {
 				"foreground": "#E5C880"
+			}
+		},
+		{
+			"scope": "storage.modifier.declaration.python",
+			"settings": {
+				"foreground": "#DD7758e0"
 			}
 		},
 		{
@@ -368,7 +388,8 @@
 			"name": "Constants",
 			"scope": [
 				"constant.numeric",
-				"constant.language"
+				"constant.language",
+				"keyword.operator.quantifier.regexp"
 			],
 			"settings": {
 				"foreground": "#b48ead"
@@ -391,7 +412,10 @@
 		},
 		{
 			"name": "Control Flow",
-			"scope": "keyword.control",
+			"scope": [
+				"keyword.control",
+				"keyword.operator.logical.python"
+			],
 			"settings": {
 				"foreground": "#7AC2D1"
 			}
@@ -413,6 +437,7 @@
 				"punctuation.definition.list",
 				"punctuation.definition.quote",
 				"punctuation.definition.link",
+				"meta.separator.markdown",
 				"punctuation.definition.metadata",
 				"punctuation.section.embedded.begin.hugo",
 				"punctuation.section.embedded.end.hugo",
@@ -529,6 +554,13 @@
 			],
 			"settings": {
 				"foreground": "#EFB294"
+			}
+		},
+		{
+			"name": "REGEX",
+			"scope": "string.regexp",
+			"settings": {
+				"foreground": "#DA4167"
 			}
 		},
 		{

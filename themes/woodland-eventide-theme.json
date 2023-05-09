@@ -1,5 +1,5 @@
 {
-	"name": "Envy",
+	"name": "Woodland Eventide",
 	"colors": {
 		"editor.background": "#1B2D2A",
 		"editor.foreground": "#eeffff",
@@ -73,6 +73,9 @@
 		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
 		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
 		"gitDecoration.stageModifiedResourceForeground": "#0FFF95",
+		// 
+		"editorInlayHint.background": "#15418860",
+		"editorInlayHint.foreground": "#eeffff80"
 	},
 	"tokenColors": [
 		{

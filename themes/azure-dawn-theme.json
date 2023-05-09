@@ -1,5 +1,5 @@
 {
-	"name": "Freeze",
+	"name": "Azure Dawn",
 	"colors": {
 		"welcomePage.background": "#3C5685",
 		"menu.separatorBackground": "#abb2bf",
@@ -62,12 +62,25 @@
 		"editor.lineHighlightBorder": "#2B4570a0",
 		"editorLineNumber.foreground": "#C2C8DF80",
 		"editorLineNumber.activeForeground": "#F2D488",
+		// Read access highlight 
+		"editor.wordHighlightBackground": "#7F079940",
+		// Write access highlight 
+		// "editor.wordHighlightStrongBackground": "#BA160C40",
 		// [!] highlights
 		"editor.selectionBackground": "#02088760",
+		// 
+		// highlight text then click off of editor
 		"editor.inactiveSelectionBackground": "#00434680",
-		"editor.findMatchHighlightBackground": "#020887a0",
+		// 
 		"editor.findMatchBackground": "#BA160Cd0",
+		// unfocused find-matches; inherits from editor.findMatchBackground with decreased opacity which looks good
+		// "editor.findMatchHighlightBackground": "#00434680",
+		// again, applies to unfocused find-matches;
+		// "editor.findMatchHighlightBorder": "#ffff00",
+		// 
+		// highlights line background
 		"editor.rangeHighlightBackground": "#BA160C40",
+		// 
 		"bookmarks.lineBackground": "#abb2bf30",
 		// [!] new background color for widgets
 		"editorWidget.background": "#395c8aF0",
@@ -131,6 +144,8 @@
 		"keybindingLabel.border": "#132145",
 		"keybindingLabel.bottomBorder": "#132145",
 		"list.inactiveSelectionBackground": "#1D3354A0",
+		"tree.indentGuidesStroke": "#F2D488c0",
+		"tree.inactiveIndentGuidesStroke": "#ECEFF460",
 		"editorInlayHint.background": "#00000000",
 		"editorInlayHint.foreground": "#abb2bfa0",
 		"list.warningForeground": "#F0955C",
@@ -202,12 +217,16 @@
 		},
 		"string": "#BFB29E",
 		"function": "#99C3F6",
+		"function.defaultLibrary": {
+			"italic": true
+		},
 		"struct": "#FE978F",
 		"enum": "#D7C9AA",
 		"enumMember": "#C4BFB6",
 		"property": "#D7C9AA",
 		"macro": "#EFB294",
 		"method": "#99C3F6",
+		"method.static.defaultLibrary:swift": "#ECEFF4D0",
 		"method.static.defaultLibrary.library.trait": "#ACC4C7",
 		"method.defaultLibrary": {
 			"foreground": "#99C3F6",
@@ -232,6 +251,11 @@
 		"formatSpecifier": {
 			"italic": true
 		},
+		"builtinConstant:python": "#D2CAB7",
+		"variable.builtin:python": {
+			"foreground": "#D2CAB7",
+			"italic": true
+		},
 		"selfKeyword": {
 			"foreground": "#E3D4AF",
 			"italic": true
@@ -240,6 +264,9 @@
 		"decorator": "#A9E3B1",
 		"tomlArrayKey": "#D7C9AA",
 		"tomlTableKey": "#D7C9AA",
+		"parameter": {
+			"italic": true
+		}
 	},
 	"tokenColors": [
 		{
@@ -278,6 +305,24 @@
 			],
 			"settings": {
 				"foreground": "#A4C2A5"
+			}
+		},
+		{
+			"name": "Escape Characters",
+			"scope": [
+				"constant.character.escape.python"
+			],
+			"settings": {
+				"foreground": "#A9E3B1"
+			}
+		},
+		{
+			"name": "Namespaces",
+			"scope": [
+				"entity.name.scope-resolution.cpp"
+			],
+			"settings": {
+				"foreground": "#DEB4D5"
 			}
 		},
 		{
@@ -343,7 +388,8 @@
 			"name": "Numeric",
 			"scope": [
 				"constant.numeric",
-				"constant.language.json"
+				"constant.language.json",
+				"constant.language.boolean.toml"
 			],
 			"settings": {
 				"foreground": "#CD94C2"
@@ -356,7 +402,8 @@
 				"storage.type.primitive.cpp",
 				"storage.type.class",
 				"storage.type.struct.declare.cpp",
-				"storage.type.js"
+				"storage.type.js",
+				"storage.type.function.python"
 			],
 			"settings": {
 				"foreground": "#CCBEA9"
@@ -364,7 +411,10 @@
 		},
 		{
 			"name": "Control Flow",
-			"scope": "keyword.control",
+			"scope": [
+				"keyword.control",
+				"keyword.operator.logical.python"
+			],
 			"settings": {
 				"foreground": "#99C8C7"
 			}
@@ -373,6 +423,7 @@
 			"name": "Keywords - Missing Semantics",
 			"scope": [
 				"keyword.local.lua",
+				"keyword.other.rust",
 				"storage.modifier.c"
 			],
 			"settings": {
@@ -380,13 +431,34 @@
 			}
 		},
 		{
-			"name": "Functions - Missing Semantics",
+			"name": "Functions - Missing Semantics & Doc Highlighting",
 			"scope": [
 				"meta.function.c",
-				"support.function.misc.scss"
+				"support.function.misc.scss",
+				"entity.name.function.rust",
+				"entity.name.function.call.cpp",
+				"entity.name.function.definition.cpp"
 			],
 			"settings": {
 				"foreground": "#99C3F6"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.function.member.cpp"
+			],
+			"settings": {
+				"foreground": "#99C3F6",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			// For doc highlighting
+			"scope": [
+				"meta.macro.rust"
+			],
+			"settings": {
+				"foreground": "#EFB294"
 			}
 		},
 		{
@@ -396,28 +468,44 @@
 			}
 		},
 		{
-			"name": "Markdown - Headings",
+			"scope": "markup.quote.markdown",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markdown - Special Punctuation",
 			"scope": [
 				"punctuation.definition.heading.markdown",
 				"punctuation.definition.list.begin.markdown",
 				"punctuation.definition.link.title.begin.markdown",
 				"punctuation.definition.link.title.end.markdown",
-				"meta.separator.markdown",
+				"punctuation.definition.link.description.begin.markdown",
+				"punctuation.definition.link.description.end.markdown",
+				"punctuation.definition.metadata.markdown",
+				"punctuation.definition.quote.begin.markdown",
+				"meta.separator.markdown"
 			],
 			"settings": {
 				"foreground": "#F2D488"
 			}
 		},
 		{
-			"scope": "string.other.link.title.markdown",
+			"scope": [
+				"string.other.link.title.markdown",
+				"string.other.link.description.markdown"
+			],
 			"settings": {
 				"foreground": "#B48EAD"
 			}
 		},
 		{
-			"scope": "markup.underline.link.markdown",
+			"scope": [
+				"markup.underline.link.markdown",
+				"markup.underline.link.image.markdown"
+			],
 			"settings": {
-				"foreground": "#88C0D0",
+				"foreground": "#88C0D0"
 			}
 		},
 		{
@@ -434,7 +522,7 @@
 				"punctuation.definition.bold.markdown",
 			],
 			"settings": {
-				"foreground": "#D8DEE9e0",
+				"foreground": "#E8E3D8f0",
 				"fontStyle": "bold"
 			}
 		},
@@ -446,7 +534,7 @@
 				"fenced_code.block.language.markdown"
 			],
 			"settings": {
-				"foreground": "#D8DEE9",
+				"foreground": "#E8E3D8f0",
 				"fontStyle": "italic"
 			}
 		},
