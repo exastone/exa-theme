@@ -17,7 +17,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added TextMate scopes for Python and some Markdown for Freeze theme
 
 ## [12/18/22]
-### Freeze
+### Azure Dawn
 
 Improved git decorations (affects file names in tabs and lists)
 
@@ -26,7 +26,7 @@ Improved git decorations (affects file names in tabs and lists)
 
 Improved syntax highlighting for Markdown & TOML
 
-### Black Ice
+### Tundra Dusk
 
 This matches the style for find/match
 
@@ -48,7 +48,7 @@ Other changes
 
 Improved syntax highlighting for Markdown & TOML
 
-### Envy
+### Woodland Eventide
 
 Passive and active matching now match
 
@@ -65,3 +65,9 @@ Improved git decorations (affects file names in tabs and lists)
 
 
 Improved syntax highlighting for Markdown & TOML
+
+## [04/29/23]
+
+- Renamed themes
+- Various tweeks to semantic highlighting and fallbacks
+

@@ -18,19 +18,19 @@
   "contributes": {
     "themes": [
       {
-        "label": "Freeze",
+        "label": "Azure Dawn",
         "uiTheme": "vs-dark",
-        "path": "./themes/freeze-color-theme.json"
+        "path": "./themes/azure-dawn-theme.json"
       },
       {
-        "label": "Envy",
+        "label": "Tundra Dusk",
         "uiTheme": "vs-dark",
-        "path": "./themes/envy-color-theme.json"
+        "path": "./themes/tundra-dusk-theme.json"
       },
       {
-        "label": "Black Ice",
+        "label": "Woodland Eventide",
         "uiTheme": "vs-dark",
-        "path": "./themes/black-ice-color-theme.json"
+        "path": "./themes/woodland-eventide-theme.json"
       }
     ]
   },
