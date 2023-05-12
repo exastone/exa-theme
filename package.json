@@ -19,6 +19,11 @@
   "contributes": {
     "themes": [
       {
+        "label": "Glacial",
+        "uiTheme": "vs",
+        "path": "./themes/glacial.json"
+      },
+      {
         "label": "Azure Dawn",
         "uiTheme": "vs-dark",
         "path": "./themes/azure-dawn-theme.json"
