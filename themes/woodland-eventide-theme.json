@@ -2,7 +2,7 @@
 	"name": "Woodland Eventide",
 	"colors": {
 		"editor.background": "#1B2D2A",
-		"editor.foreground": "#eeffff",
+		"editor.foreground": "#efefef",
 		"badge.background": "#1446A0",
 		"menu.background": "#012622",
 		"activityBarBadge.background": "#1446A0",
@@ -113,7 +113,7 @@
 		{
 			"name": "Rust - self",
 			"scope": [
-				"variable.language.self.rust",
+				"variable.language.self.rust"
 			],
 			"settings": {
 				"foreground": "#4CB5AE"
@@ -151,13 +151,12 @@
 		{
 			"name": "Keyword, Storage",
 			"scope": [
-				"keyword",
 				"keyword.control.flow",
-				"storage.type",
-				"storage.modifier"
+				// "storage.type",
+				// "storage.modifier"
 			],
 			"settings": {
-				"foreground": "#DA4167"
+				"foreground": "#FF4D79"
 			}
 		},
 		{
@@ -181,17 +180,9 @@
 			}
 		},
 		{
-			"name": "Javascript - ",
-			"scope": [
-				"keyword.operator.assignment.js"
-			],
-			"settings": {
-				"foreground": "#C2C8DF"
-			}
-		},
-		{
 			"name": "Operators",
 			"scope": [
+				"keyword.operator",
 				"keyword.operator.assignment",
 				"keyword.operator.arithmetic",
 				"keyword.operator.logical",
@@ -200,7 +191,7 @@
 				"storage.type.function.arrow",
 				"punctuation.definition.parameters.end.tsx",
 				"meta.parameters.tsx",
-				"meta.arrow.tsx",
+				"meta.arrow.tsx"
 			],
 			"settings": {
 				"foreground": "#C2C8DF"
@@ -256,7 +247,6 @@
 		{
 			"name": "Block Level Variables",
 			"scope": [
-				"meta.block",
 				"variable.other"
 			],
 			"settings": {
@@ -299,7 +289,7 @@
 		},
 		{
 			"scope": [
-				"variable.parameter",
+				"variable.parameter"
 				// "variable.other.object.java"
 			],
 			"settings": {
@@ -317,7 +307,7 @@
 			"name": "Java Types - Primitives",
 			"scope": [
 				"storage.type.java",
-				"storage.type.primitive.java",
+				"storage.type.primitive.java"
 			],
 			"settings": {
 				"foreground": "#C08497"
@@ -339,7 +329,6 @@
 				"source.json",
 				"punctuation.support.type.property-name.begin.json.comments",
 				"punctuation.support.type.property-name.end.json.comments",
-				"meta.structure.dictionary.json",
 				"support.type.property-name.json",
 				"meta.object-literal.key.tsx",
 				"meta.object-literal.key.jsx"
@@ -352,25 +341,36 @@
 			"name": "JSON - Array Begin and End '[' & ']'",
 			"scope": [
 				"punctuation.definition.array.begin.json.comments",
-				"punctuation.definition.array.end.json.comments",
+				"punctuation.definition.array.end.json.comments"
 			],
 			"settings": {
 				"foreground": "#F2E2BA"
 			}
 		},
 		{
-			"name": "Strings",
+			"name": "Strings - Code ",
 			"scope": [
-				"string",
-				"punctuation.definition.string.begin",
-				"punctuation.definition.string.end",
+				"string.quoted.double.c",
+				"punctuation.definition.string.begin.c",
+				"punctuation.definition.string.end.c"
+			],
+			"settings": {
+				"foreground": "#A5C9BA"
+			}
+		},
+		{
+			"name": "Strings - Non-Code",
+			"scope": [
+				"string.quoted.double.json.comments",
+				"punctuation.definition.string.begin.json.comments",
+				"punctuation.definition.string.end.json.comments",
 				"punctuation.definition.tag.begin.tsx",
 				"punctuation.definition.tag.end.tsx",
 				"punctuation.definition.tag.begin.jsx",
-				"punctuation.definition.tag.end.jsx",
+				"punctuation.definition.tag.end.jsx"
 			],
 			"settings": {
-				"foreground": "#BFBDC1",
+				"foreground": "#BFBDC1"
 			}
 		},
 		{
@@ -593,7 +593,7 @@
 			"name": "TOML, Markdown - Section Name & Table",
 			"scope": [
 				"entity.name.section.markdown",
-				"support.type.property-name.table.toml",
+				"support.type.property-name.table.toml"
 			],
 			"settings": {
 				"foreground": "#82AAFF"
@@ -606,7 +606,7 @@
 			],
 			"settings": {
 				"foreground": "#F2E2BA"
-			},
+			}
 		},
 		{
 			"name": "TOML - Escape Character",
@@ -623,7 +623,7 @@
 				"punctuation.definition.strikethrough.markdown"
 			],
 			"settings": {
-				"foreground": "#f45b58",
+				"foreground": "#f45b58"
 			}
 		},
 		{
@@ -690,7 +690,7 @@
 				"punctuation.definition.markdown",
 				"punctuation.definition.quote.begin.markdown",
 				"punctuation.definition.quote.end.markdown",
-				"fenced_code.block.language.markdown",
+				"fenced_code.block.language.markdown"
 			],
 			"settings": {
 				"foreground": "#F2E2BA"
@@ -711,7 +711,7 @@
 				"punctuation.definition.link.title.begin.markdown",
 				"punctuation.definition.link.title.end.markdown",
 				"markup.heading.setext",
-				"meta.separator.markdown",
+				"meta.separator.markdown"
 			],
 			"settings": {
 				"foreground": "#F2E2BA"
