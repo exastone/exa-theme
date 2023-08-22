@@ -2,7 +2,7 @@
   "name": "joegrammer-theme",
   "displayName": "Joegrammer Theme",
   "description": "Theme pack for the average (joe) programmer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "AndrewStone",
   "engines": {
     "vscode": "^1.72.0"
@@ -18,6 +18,11 @@
   ],
   "contributes": {
     "themes": [
+      {
+        "label": "Glacial",
+        "uiTheme": "vs",
+        "path": "./themes/glacial.json"
+      },
       {
         "label": "Azure Dawn",
         "uiTheme": "vs-dark",
