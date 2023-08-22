@@ -7,7 +7,7 @@
 - Tundra Dusk (dark blue theme) semantic highlighting 
 - Woodland Eventide (foresty-green theme)
 
-![Combined Theme Preview](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/combined.png?raw=true)
+![Combined Theme Preview](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/combined.jpg?raw=true)
 
 ![Glacial](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/theme-glacial.jpg?raw=true)
 
