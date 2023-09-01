@@ -1,4 +1,4 @@
-# Joegrammer Theme
+# Exa Theme Pack
 
 ### 4 Themes
 

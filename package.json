@@ -1,12 +1,13 @@
 {
-  "name": "joegrammer-theme",
-  "displayName": "Joegrammer Theme",
-  "description": "Theme pack for the average (joe) programmer",
-  "version": "0.2.3",
-  "publisher": "AndrewStone",
+  "name": "exa-theme",
+  "displayName": "Exa Theme",
+  "description": "Get your own theme",
+  "version": "0.2.4",
+  "publisher": "exastone",
   "engines": {
     "vscode": "^1.72.0"
   },
+  "icon": "icon/party-puffin-circle.png",
   "preview": true,
   "categories": [
     "Themes",
@@ -41,9 +42,9 @@
     ]
   },
   "keywords": [
-    "joegrammer",
     "theme",
     "dark",
+    "light",
     "vscode"
   ],
   "repository": {
@@ -54,6 +55,6 @@
     "id": "24af2ba6-b996-4336-a1a4-772cdfd98608",
     "publisherDisplayName": "Andrew Stone",
     "publisherId": "5a5cbcbf-7df2-4cb3-a046-092fc34be666",
-    "isPreReleaseVersion": true
+    "isPreReleaseVersion": false
   }
 }
