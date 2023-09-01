@@ -66,7 +66,8 @@
         "editor.wordHighlightBackground": "#C2C8DF70",
         // [!] highlights
         // Write access highlight 
-        "editor.selectionBackground": "#B3DCF280",
+        "editor.selectionBackground": "#B3DCF2b0",
+        "editor.selectionHighlightBorder": "#B3DCF2",
         "editor.inactiveSelectionBackground": "#B3F2C360",
         "editor.findMatchBackground": "#F2D488b0",
         // applies to unfocused find-matches;
@@ -131,8 +132,8 @@
         "list.inactiveSelectionBackground": "#BFD0E0c0",
         "tree.indentGuidesStroke": "#1446A0c0",
         "tree.inactiveIndentGuidesStroke": "#1D335460",
-        "editorInlayHint.background": "#00000000",
-        "editorInlayHint.foreground": "#1D335480",
+        "editorInlayHint.background": "#BFD0E060",
+        "editorInlayHint.foreground": "#1D3354A0",
         "list.warningForeground": "#F0955C",
         "editorError.foreground": "#DB162F",
         "editorLink.activeForeground": "#1446A0",
@@ -173,14 +174,14 @@
         "gitDecoration.renamedResourceForeground": "#DB162F",
         "gitDecoration.ignoredResourceForeground": "#1D3354c0",
         // [!] PeekView
-        "peekViewEditor.background": "#415D91",
-        "peekViewTitleDescription.foreground": "#1D3354a0",
+        "peekViewEditor.background": "#415D9120",
+        "peekViewTitleDescription.foreground": "#1D3354",
         "peekViewTitleLabel.foreground": "#1446A0",
-        "peekViewResult.background": "#395280",
-        "peekViewResult.lineForeground": "#1D3354a0",
+        "peekViewResult.background": "#E5E8EE",
+        "peekViewResult.lineForeground": "#1D3354",
         "peekViewResult.selectionForeground": "#1D3354",
-        "peekViewResult.matchHighlightBackground": "#020887a0",
-        "peekViewEditor.matchHighlightBackground": "#8B85C1a0",
+        "peekViewResult.matchHighlightBackground": "#dcb659a0",
+        "peekViewEditor.matchHighlightBackground": "#dcb659a0",
         "peekViewEditorStickyScroll.background": "#E5E8EEa0"
     },
     "semanticHighlighting": true,
