@@ -2,7 +2,7 @@
   "name": "exa-theme",
   "displayName": "Exa Theme",
   "description": "Get your own theme",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "publisher": "exastone",
   "engines": {
     "vscode": "^1.72.0"
