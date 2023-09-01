@@ -1,6 +1,6 @@
 {
   "name": "exa-theme",
-  "displayName": "Exa Theme",
+  "displayName": "Exa - Theme Pack",
   "description": "Get your own theme",
   "version": "1.0.0",
   "publisher": "exastone",
@@ -8,7 +8,7 @@
     "vscode": "^1.72.0"
   },
   "icon": "icon/party-puffin-circle.png",
-  "preview": true,
+  "preview": false,
   "categories": [
     "Themes",
     "Other"
@@ -43,8 +43,12 @@
   },
   "keywords": [
     "theme",
-    "dark",
     "light",
+    "dark",
+    "day",
+    "night",
+    "exa",
+    "pack",
     "vscode"
   ],
   "repository": {
