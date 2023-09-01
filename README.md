@@ -9,11 +9,10 @@
 
 ![Combined Theme Preview](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/combined.jpg?raw=true)
 
-![Glacial](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/theme-glacial.jpg?raw=true)
+![Glacial](https://github.com/exastone/exa-theme/blob/main/screenshots/theme-glacial.jpg?raw=true)
 
-![Tundra Dusk](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/theme-dusk.jpg?raw=true)
+![Tundra Dusk](https://github.com/exastone/exa-theme/blob/main/screenshots/theme-dusk.jpg?raw=true)
 
-![Azure Dawn](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/theme-dawn.jpg?raw=true)
+![Azure Dawn](https://github.com/exastone/exa-theme/blob/main/screenshots/theme-dawn.jpg?raw=true)
 
-
-![Woodland Eventide](https://github.com/exastone/joegrammer-theme/blob/main/screenshots/theme-woodland.jpg?raw=true)
+![Woodland Eventide](https://github.com/exastone/exa-theme/blob/main/screenshots/theme-woodland.jpg?raw=true)
