@@ -217,7 +217,7 @@
         "variable.declaration.static.constant.public": {
             "fontStyle": ""
         },
-        "type": "#1A3A3A",
+        "type": "#526499",
         "builtinType": "#1A3A3A",
         "number": "#8A3258",
         "boolean": "#8A3258",
@@ -547,6 +547,20 @@
             "scope": "markup.inline.raw",
             "settings": {
                 "foreground": "#0D6B70"
+            }
+        },
+        {
+            "name": "Level 1 List Items - Markdown",
+            "scope": "markup.list.unnumbered.markdown meta.paragraph.markdown",
+            "settings": {
+                "foreground": "#1D3354"
+            }
+        },
+        {
+            "name": "Level 2+ List Items - Markdown",
+            "scope": "markup.list.unnumbered.markdown markup.list.unnumbered.markdown meta.paragraph.markdown",
+            "settings": {
+                "foreground": "#464C54e0"
             }
         },
         {

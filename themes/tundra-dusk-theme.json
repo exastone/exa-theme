@@ -206,7 +206,7 @@
 			"italic": true
 		},
 		"struct": "#E76D7E",
-		"class": "#E76D7E",
+		"class": "#EF8160",
 		"enum": "#99B19C",
 		"enumMember": "#C4BFB6",
 		"property": "#ABA5DE",
@@ -216,7 +216,6 @@
 		},
 		"macro": "#E66D53",
 		"method": "#91beea",
-		// "method.static.defaultLibrary.library.trait": "#ACC4C7",
 		"method.builtin": {
 			"foreground": "#919FEB",
 			"italic": true
