@@ -286,7 +286,8 @@
 			"name": "Strings - Code",
 			"scope": [
 				"string.quoted",
-				"punctuation.definition.string"
+				"punctuation.definition.string",
+				"string.source.cmake"
 			],
 			"settings": {
 				"foreground": "#CDF2CE"
@@ -361,6 +362,15 @@
 			}
 		},
 		{
+			"name": "Block Comments",
+			"scope": [
+				"comment.block"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
+		},
+		{
 			"name": "Numeric",
 			"scope": [
 				"constant.numeric",
@@ -413,7 +423,8 @@
 				"support.function.misc.scss",
 				"entity.name.function.rust",
 				"entity.name.function.call.cpp",
-				"entity.name.function.definition.cpp"
+				"entity.name.function.definition.cpp",
+				"keyword.cmake"
 			],
 			"settings": {
 				"foreground": "#BBDDFB"

@@ -275,7 +275,8 @@
 				"string.quoted.single.shell",
 				"string.quoted.double.shell",
 				"punctuation.definition.string.begin.shell",
-				"punctuation.definition.string.end.shell"
+				"punctuation.definition.string.end.shell",
+				"string.source.cmake"
 			],
 			"settings": {
 				"foreground": "#7FB685"
@@ -361,7 +362,8 @@
 			"scope": [
 				"entity.name.function.c",
 				"support.function.misc.scss",
-				"entity.name.command.shell"
+				"entity.name.command.shell",
+				"keyword.cmake"
 			],
 			"settings": {
 				"foreground": "#91beea"
@@ -410,6 +412,15 @@
 			"settings": {
 				"foreground": "#d8dee990",
 				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Block Comments",
+			"scope": [
+				"comment.block"
+			],
+			"settings": {
+				"fontStyle": ""
 			}
 		},
 		{

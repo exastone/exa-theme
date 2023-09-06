@@ -2,7 +2,7 @@
 	"name": "Woodland Eventide",
 	"colors": {
 		"editor.background": "#1B2D2A",
-		"editor.foreground": "#efefef",
+		"editor.foreground": "#efefefd0",
 		"badge.background": "#1446A0",
 		"menu.background": "#012622",
 		"activityBarBadge.background": "#1446A0",
@@ -96,6 +96,15 @@
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#7E846B"
+			}
+		},
+		{
+			"name": "Block Comment",
+			"scope": [
+				"comment.block"
+			],
+			"settings": {
+				"fontStyle": ""
 			}
 		},
 		// [!] Rust
@@ -240,13 +249,14 @@
 			}
 		},
 		{
-			"name": "Function, Special Method",
+			"name": "Functions - Missing Semantics & Doc Highlighting",
 			"scope": [
 				"entity.name.function",
 				"meta.function-call",
 				"variable.function",
 				"support.function",
-				"keyword.other.special-method"
+				"keyword.other.special-method",
+				"keyword.cmake"
 			],
 			"settings": {
 				"foreground": "#91B4FF"
@@ -362,7 +372,8 @@
 			"scope": [
 				"string.quoted.double.c",
 				"punctuation.definition.string.begin.c",
-				"punctuation.definition.string.end.c"
+				"punctuation.definition.string.end.c",
+				"string.source.cmake"
 			],
 			"settings": {
 				"foreground": "#A5C9BA"
@@ -382,8 +393,11 @@
 			}
 		},
 		{
-			"name": "Strings - Non-Code",
+			"name": "Strings - Config",
 			"scope": [
+				"meta.structure.array.json",
+				"punctuation.definition.string.begin.json",
+				"punctuation.definition.string.end.json",
 				"string.quoted.double.json.comments",
 				"punctuation.definition.string.begin.json.comments",
 				"punctuation.definition.string.end.json.comments",
