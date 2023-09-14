@@ -214,7 +214,7 @@
 			"foreground": "#00B591",
 			"italic": true
 		},
-		"macro": "#E66D53",
+		"macro": "#F37458",
 		"method": "#91beea",
 		"method.builtin": {
 			"foreground": "#919FEB",
@@ -640,10 +640,19 @@
 		},
 		{
 			"scope": [
-				"entity.name.function.macro.rust"
+				"entity.name.function.macro.rust",
+				"entity.name.function.preprocessor.cpp",
+				"meta.preprocessor.macro.cpp"
 			],
 			"settings": {
-				"foreground": "#E66D53"
+				"foreground": "#F37458"
+			}
+		},
+		{
+			"scope": "storage.source.cmake",
+			"settings": {
+				"foreground": "#F37458",
+				"fontStyle": "italic"
 			}
 		},
 		{
