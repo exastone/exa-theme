@@ -262,15 +262,6 @@
 	},
 	"tokenColors": [
 		{
-			"scope": [
-				"keyword.operator.borrow.and.rust",
-				"keyword.operator.dereference.rust"
-			],
-			"settings": {
-				"foreground": "#9AB59D",
-			}
-		},
-		{
 			"name": "Special Operators",
 			"scope": [
 				"keyword.operator.range.rust"

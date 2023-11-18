@@ -1,7 +1,6 @@
 {
 	"name": "Tundra Dusk",
 	"colors": {
-		// "welcomePage.background": "#0c1426a0",
 		"icon.foreground": "#F2D488",
 		"foreground": "#D9E5FFd0",
 		"focusBorder": "#F2E3D545",
@@ -135,11 +134,6 @@
 		"panelTitle.activeForeground": "#F2D488",
 		"panelTitle.activeBorder": "#F2D488",
 		"panelTitle.inactiveForeground": "#ECEFF490",
-		// "panelSectionHeader.background": "#132145",
-		// "panelSectionHeader.foreground": "#ECEFF4",
-		// "panelSection.border": "#5E81AC",
-		// "panelSectionHeader.border": "#F2E3D545",
-		// [!] Extension
 		"extensionButton.prominentBackground": "#253B7A",
 		"extensionButton.prominentForeground": "#ECEFF4",
 		"extensionButton.prominentHoverBackground": "#0c1426",
@@ -179,9 +173,7 @@
 		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
 		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
 		"gitDecoration.stageModifiedResourceForeground": "#0FFF95b0",
-		// 
 		"markdown.extension.editor.codeSpan.border": "#00000000",
-		// 
 		"editorError.foreground": "#FD788B",
 		"editorWarning.foreground": "#FBF2C0b0"
 	},
@@ -205,11 +197,13 @@
 		"function.builtin": {
 			"italic": true
 		},
-		"struct": "#E76D7E",
+		"struct": "#EF8160",
 		"class": "#EF8160",
-		"enum": "#99B19C",
-		"enumMember": "#C4BFB6",
+		"enum": "#E8929E",
+		"enumMember": "#ABA5DE",
 		"property": "#ABA5DE",
+		"namespace": "#D8DEE9b0",
+		"module": "#B48EAD",
 		"property.builtin:python": {
 			"foreground": "#00B591",
 			"italic": true
@@ -232,7 +226,6 @@
 		"variable.declaration.static.constant.public": {
 			"foreground": "#00B591"
 		},
-		"namespace": "#B48EAD",
 		"builtinType": "#E9477E",
 		"number": "#B48EAD",
 		"boolean": "#B48EAD",
@@ -307,17 +300,6 @@
 			}
 		},
 		{
-			"name": "Special Operators",
-			"scope": [
-				"keyword.operator.range.rust",
-				"keyword.operator.arrow.fat.rust",
-				"punctuation.definition.character-class.regexp"
-			],
-			"settings": {
-				"foreground": "#C8C098"
-			}
-		},
-		{
 			"scope": [
 				"support.type.property-name",
 				"support.type.vendored.property-name.css"
@@ -329,7 +311,7 @@
 		{
 			"scope": [
 				"punctuation.definition.table.toml",
-				"punctuation.definition.array.table.toml",
+				"punctuation.definition.array.table.toml"
 			],
 			"settings": {
 				"foreground": "#CEA646"
@@ -340,7 +322,6 @@
 			"scope": [
 				"keyword.local.lua",
 				"storage.modifier.c",
-				"keyword.other",
 				"keyword.declaration.trait.rust",
 				"storage.type.rust",
 				"storage.type.function.python",
@@ -386,9 +367,7 @@
 			"scope": [
 				"storage.type.class",
 				"storage.type.struct.declare.cpp",
-				"storage.type.js",
-				"entity.name.type.numeric",
-				"entity.name.type.primitive.rust"
+				"storage.type.js"
 			],
 			"settings": {
 				"foreground": "#DA4167"
@@ -615,36 +594,10 @@
 		},
 		{
 			"scope": [
-				"variable.other.object.js",
-				"variable.other.property.js"
-			],
-			"settings": {
-				"foreground": "#ACC4C7"
-			}
-		},
-		{
-			"scope": [
 				"meta.attribute.python"
 			],
 			"settings": {
 				"foreground": "#EF8160"
-			}
-		},
-		// [!] Additional tokens for highlighting in doc (semantics not supported)
-		{
-			"scope": [
-				"entity.name.type.rust"
-			],
-			"settings": {
-				"foreground": "#FD788B"
-			}
-		},
-		{
-			"scope": [
-				"variable.other"
-			],
-			"settings": {
-				"foreground": "#C8B8AC"
 			}
 		},
 		{
@@ -704,6 +657,6 @@
 			"settings": {
 				"foreground": "#D9E5FF"
 			}
-		},
+		}
 	]
 }
