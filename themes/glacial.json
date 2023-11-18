@@ -4,7 +4,8 @@
         "welcomePage.background": "#D8DEE9",
         "welcomePage.tileBackground": "#E5E8EE",
         "menu.separatorBackground": "#BFD0E0",
-        "menu.background": "#BFD0E0F0",
+        // right click menu on windows
+        "menu.background": "#D8DEE9F0",
         "menu.foreground": "#1D3354",
         "focusBorder": "#BFD0E0",
         "editor.background": "#ECEFF4",
@@ -114,7 +115,7 @@
         // 'Cmd'+'.'
         "inputValidation.infoBackground": "#BFD0E0F0",
         "inputValidation.infoBorder": "#BFD0E0",
-        "inputValidation.errorBackground": "#ba445080",
+        "inputValidation.errorBackground": "#ddbbbb",
         "panel.background": "#E5E8EE",
         "panelTitle.activeForeground": "#2F4858",
         "list.hoverBackground": "#BFD0E0a0",
@@ -134,7 +135,7 @@
         "tree.inactiveIndentGuidesStroke": "#1D335460",
         "editorInlayHint.background": "#BFD0E060",
         "editorInlayHint.foreground": "#1D3354A0",
-        "list.warningForeground": "#F0955C",
+        "list.warningForeground": "#EF7B45",
         "editorError.foreground": "#DB162F",
         "editorLink.activeForeground": "#1446A0",
         "debugConsole.sourceForeground": "#1D3354a0",
@@ -173,6 +174,7 @@
         "gitDecoration.stageModifiedResourceForeground": "#945B2C",
         "gitDecoration.renamedResourceForeground": "#DB162F",
         "gitDecoration.ignoredResourceForeground": "#1D3354c0",
+        "diffEditor.removedLineBackground": "#ff000001",
         // [!] PeekView
         "peekViewEditor.background": "#415D9120",
         "peekViewTitleDescription.foreground": "#1D3354",
@@ -197,6 +199,8 @@
         "function.defaultLibrary": {
             "italic": true
         },
+        "class": "#8A3258",
+        "class.typeHint": "#8A3258",
         "struct": "#8A3258",
         "enum": "#0D6B70",
         "enumMember": "#8A3258",
@@ -217,7 +221,7 @@
         "variable.declaration.static.constant.public": {
             "fontStyle": ""
         },
-        "type": "#526499",
+        "type": "#5863F8",
         "builtinType": "#1A3A3A",
         "number": "#8A3258",
         "boolean": "#8A3258",
@@ -361,8 +365,14 @@
             "scope": [
                 "constant.numeric",
                 "constant.language.json",
+                "constant.language.boolean",
                 "constant.language.boolean.toml",
-                "constant.language.boolean"
+                "entity.name.tag.html",
+                "entity.name.type.rust",
+                "support.class.component.js",
+                "support.class.component.tsx",
+                "support.class.component.js.jsx",
+                "entity.name.type.class.mermaid"
             ],
             "settings": {
                 "foreground": "#8A3258"
@@ -375,7 +385,10 @@
                 "storage.type.primitive.cpp",
                 "storage.type.class",
                 "storage.type.struct.declare.cpp",
-                "storage.type.function.python"
+                "storage.type.function.python",
+                "source.mermaid",
+                "keyword.control.mermaid",
+                "entity.name.variable.field.mermaid"
             ],
             "settings": {
                 "foreground": "#1A3A3A"
@@ -396,7 +409,8 @@
             "scope": [
                 "keyword.local.lua",
                 "keyword.other.rust",
-                "storage.modifier.c"
+                "storage.modifier.c",
+                "storage.type.mermaid"
             ],
             "settings": {
                 "foreground": "#5863F8"
@@ -413,7 +427,8 @@
                 "entity.name.function.definition.cpp",
                 "entity.name.function.js",
                 "meta.function-call.python",
-                "keyword.cmake"
+                "keyword.cmake",
+                "entity.name.function.mermaid"
             ],
             "settings": {
                 "foreground": "#275DAD"
@@ -605,25 +620,6 @@
             ],
             "settings": {
                 "foreground": "#275DAD"
-            }
-        },
-        {
-            "scope": [
-                "entity.name.tag.html",
-                "entity.name.type.rust"
-            ],
-            "settings": {
-                "foreground": "#8A3258"
-            }
-        },
-        {
-            "scope": [
-                "support.class.component.js",
-                "support.class.component.tsx",
-                "support.class.component.js.jsx"
-            ],
-            "settings": {
-                "foreground": "#8A3258"
             }
         },
         {

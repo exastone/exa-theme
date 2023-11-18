@@ -127,7 +127,8 @@
 		// 'Cmd'+'.'
 		"inputValidation.infoBackground": "#395c8aF0",
 		"inputValidation.infoBorder": "#31476EF0",
-		"inputValidation.errorBackground": "#ba445080",
+		"inputValidation.errorBackground": "#ba4450F0",
+		"inputValidation.errorForeground": "#ECEFF4",
 		// 
 		"panel.background": "#30456B",
 		"panelTitle.activeForeground": "#F2D488",
@@ -146,8 +147,8 @@
 		"list.inactiveSelectionBackground": "#1D3354A0",
 		"tree.indentGuidesStroke": "#F2D488c0",
 		"tree.inactiveIndentGuidesStroke": "#ECEFF460",
-		"editorInlayHint.background": "#00000000",
-		"editorInlayHint.foreground": "#abb2bfa0",
+		"editorInlayHint.background": "#415D9180",
+		"editorInlayHint.foreground": "#ECEFF4a0",
 		"list.warningForeground": "#F0955C",
 		"editorError.foreground": "#DB162F",
 		"editorLink.activeForeground": "#F2D488",
@@ -214,10 +215,12 @@
 		"function.defaultLibrary": {
 			"italic": true
 		},
-		"struct": "#FDBDB9",
+		"class": "#EFB294",
+		"struct": "#EFB294",
+		"module": "#CFD5DF",
 		"enum": "#D7C9AA",
 		"enumMember": "#C4BFB6",
-		"property": "#D7C9AA",
+		"property": "#C8C8FB",
 		"macro": "#EFB294",
 		"method": "#BBDDFB",
 		"method.static.defaultLibrary:swift": "#CFD5DF",
@@ -226,7 +229,7 @@
 			"foreground": "#BBDDFB",
 			"italic": true
 		},
-		"variable": "#E7ECE9",
+		"variable": "#CFD5DF",
 		"variable.defaultLibrary": "#D2CAB7",
 		"variable.reference": {
 			"italic": true
@@ -251,6 +254,10 @@
 		"tomlTableKey": "#D7C9AA",
 		"parameter": {
 			"italic": true
+		},
+		"magicFunction.builtin": {
+			"foreground": "#C8C8FB",
+			"fontStyle": "italic"
 		}
 	},
 	"tokenColors": [
@@ -290,7 +297,7 @@
 				"string.source.cmake"
 			],
 			"settings": {
-				"foreground": "#CDF2CE"
+				"foreground": "#A4DAA8"
 			}
 		},
 		{
@@ -347,7 +354,7 @@
 				"punctuation.support.type.property-name.end.json"
 			],
 			"settings": {
-				"foreground": "#F2D488"
+				"foreground": "#F3D9B0"
 			}
 		},
 		{
@@ -392,7 +399,7 @@
 				"storage.type.function.python"
 			],
 			"settings": {
-				"foreground": "#F7E6CD"
+				"foreground": "#F2D488"
 			}
 		},
 		{
@@ -428,6 +435,18 @@
 			],
 			"settings": {
 				"foreground": "#BBDDFB"
+			}
+		},
+		{
+			"scope": "meta.attribute.python",
+			"settings": {
+				"foreground": "#EFB294"
+			}
+		},
+		{
+			"scope": "string.regexp.quoted.single.python",
+			"settings": {
+				"foreground": "#FDBDB9"
 			}
 		},
 		{

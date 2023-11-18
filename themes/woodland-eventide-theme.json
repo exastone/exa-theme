@@ -25,7 +25,8 @@
 		"tab.activeBorder": "#D7B377",
 		"tab.activeModifiedBorder": "#1446A0",
 		"tab.inactiveModifiedBorder": "#1446A0",
-		// 
+		"editorStickyScroll.background": "#01262280",
+		"editorStickyScrollHover.background": "#254531",
 		"editor.lineHighlightBackground": "#012622",
 		"editor.lineHighlightBorder": "#8F754F80",
 		"editorLineNumber.activeForeground": "#fe820f",
@@ -45,45 +46,58 @@
 		"settings.rowHoverBackground": "#1F3330",
 		"panelTitle.activeBorder": "#D7B377",
 		"panelTitle.activeForeground": "#D7B377",
-		// "editor.rangeHighlightBackground": "#203B27",
+		"peekViewResult.background": "#254531",
+		"peekViewEditor.background": "#012622",
 		"editor.rangeHighlightBorder": "#8F754F",
-		// "editor.hoverHighlightBackground": "#007acc90",
 		"editor.hoverHighlightBackground": "#5C80BC60",
-		// "editor.rangeHighlightBackground": "#ff00ff",
 		// [!] Active and Passive matching
 		"editor.selectionBackground": "#BA160C70",
 		"editor.selectionHighlightBackground": "#1446A070",
 		"editor.findMatchBackground": "#BA160C",
 		"editor.findMatchHighlightBackground": "#1446A0a0",
-		// 
 		"markdown.extension.editor.codeSpan.background": "#012622",
 		"markdown.extension.editor.codeSpan.border": "#84A07C80",
 		"textPreformat.foreground": "#F78C6C",
-		"textLink.foreground": "#BEFFC7",
+		"textLink.foreground": "#BEFFC7d0",
 		"textLink.activeForeground": "#D7B377",
 		"quickInputList.focusBackground": "#004346",
 		"input.placeholderForeground": "#eeffff80",
+		"inputOption.activeForeground": "#D7B377",
+		"inputOption.activeBackground": "#012622",
 		"list.hoverBackground": "#2E2F2F",
 		"list.hoverForeground": "#eeffff",
 		"list.inactiveSelectionBackground": "#003B36",
 		"minimap.background": "#1B2D2Ad0",
 		"keybindingLabel.border": "#7B7554",
 		"keybindingLabel.bottomBorder": "#7B7554",
-		// [!] Git
+		"diffEditor.removedTextBackground": "#BA160C40",
+		"diffEditor.removedLineBackground": "#BA160C40",
+		"diffEditor.insertedTextBackground": "#25453140",
+		"diffEditor.unchangedRegionBackground": "#012622",
 		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
 		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
 		"gitDecoration.stageModifiedResourceForeground": "#0FFF95",
-		// 
 		"editorInlayHint.background": "#15418860",
 		"editorInlayHint.foreground": "#eeffff80"
 	},
 	"semanticHighlighting": {
-		"function": "#91B4FF",
-		"variable": "#D9E5FFD0",
-		"parameter": "#D9E5FFD0",
-		"parameter.declaration": {
-			"foreground": "#D9E5FFB0",
+		"variable": "#CFD5DF",
+		"class": "#EFB294",
+		"class.typeHint.builtin": "#D4A7CE",
+		"builtinConstant": "#D4A7CE",
+		"module": "#CFD5DFe0",
+		"function": "#9CCAFF",
+		"function.builtin": {
 			"fontStyle": "italic"
+		},
+		"method": "#9CCAFF",
+		"property": "#C8C8FB",
+		"parameter": {
+			"foreground": "#CFD5DF",
+			"fontStyle": "italic"
+		},
+		"parameter.declaration": {
+			"foreground": "#CFD5DFD0",
 		}
 	},
 	"tokenColors": [
@@ -168,9 +182,8 @@
 			}
 		},
 		{
-			"name": "Keyword, Storage",
 			"scope": [
-				"keyword.control.flow"
+				"keyword.control"
 			],
 			"settings": {
 				"foreground": "#65E2BA"
@@ -179,7 +192,6 @@
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
 				"constant.other.color",
 				"punctuation",
 				"meta.tag",
@@ -226,29 +238,6 @@
 			}
 		},
 		{
-			"name": "JS/TS Imports",
-			"scope": [
-				"keyword.control.import.tsx",
-				"keyword.control.from.tsx",
-				"keyword.control.import.jsx",
-				"keyword.control.from.jsx"
-			],
-			"settings": {
-				"foreground": "#C76D7E"
-			}
-		},
-		{
-			"scope": [
-				"variable.other.readwrite.alias.tsx",
-				"variable.other.readwrite.alias.jsx",
-				"meta.import.tsx",
-				"meta.import.jsx"
-			],
-			"settings": {
-				"foreground": "#dc7759"
-			}
-		},
-		{
 			"name": "Functions - Missing Semantics & Doc Highlighting",
 			"scope": [
 				"entity.name.function",
@@ -259,7 +248,13 @@
 				"keyword.cmake"
 			],
 			"settings": {
-				"foreground": "#91B4FF"
+				"foreground": "#9CCAFF"
+			}
+		},
+		{
+			"scope": "storage.type.class",
+			"settings": {
+				"foreground": "#E5C880"
 			}
 		},
 		{
@@ -282,12 +277,13 @@
 			}
 		},
 		{
-			"name": "Number",
+			"name": "Constant",
 			"scope": [
-				"constant.numeric"
+				"constant.numeric",
+				"constant.language"
 			],
 			"settings": {
-				"foreground": "#E9BCB7"
+				"foreground": "#D4A7CE"
 			}
 		},
 		{
@@ -332,19 +328,8 @@
 			}
 		},
 		{
-			"name": "Java Control Flow + New",
-			"scope": [
-				"keyword.control.java",
-				"keyword.control.new.java"
-			],
-			"settings": {
-				"foreground": "#FFCA14"
-			}
-		},
-		{
 			"name": "Property Name JSON",
 			"scope": [
-				"source.json",
 				"punctuation.support.type.property-name.begin.json.comments",
 				"punctuation.support.type.property-name.end.json.comments",
 				"punctuation.support.type.property-name.begin.json",
@@ -354,7 +339,7 @@
 				"meta.object-literal.key.jsx"
 			],
 			"settings": {
-				"foreground": "#C7BBAD"
+				"foreground": "#D7B377"
 			}
 		},
 		{
@@ -389,7 +374,7 @@
 				"string.quoted.double.scss"
 			],
 			"settings": {
-				"foreground": "#7FB685"
+				"foreground": "#A4DAA8"
 			}
 		},
 		{

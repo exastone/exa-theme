@@ -23,7 +23,7 @@
 		"editor.selectionBackground": "#9C004E80",
 		"editor.inactiveSelectionBackground": "#253B7A60",
 		"editor.selectionHighlightBackground": "#1446A070",
-		"editor.findMatchBackground": "#9C004E",
+		"editor.findMatchBackground": "#9C004EA0",
 		"editor.findMatchHighlightBackground": "#1446A0a0", // all matches
 		"editor.findRangeHighlightBackground": "#BF616A90",
 		"searchEditor.findMatchBackground": "#4900e8",
@@ -361,12 +361,13 @@
 			"name": "Functions - Missing Semantics",
 			"scope": [
 				"entity.name.function.c",
+				"entity.name.function.python",
 				"support.function.misc.scss",
 				"entity.name.command.shell",
 				"keyword.cmake"
 			],
 			"settings": {
-				"foreground": "#91beea"
+				"foreground": "#91BEEA"
 			}
 		},
 		{
@@ -510,7 +511,7 @@
 				"markup.fenced_code.block.markdown"
 			],
 			"settings": {
-				"foreground": "#C9C5BCd0"
+				"foreground": "#d8dee9d0"
 			}
 		},
 		{
@@ -544,7 +545,7 @@
 			"name": "REGEX",
 			"scope": "string.regexp",
 			"settings": {
-				"foreground": "#DA4167"
+				"foreground": "#FB767E"
 			}
 		},
 		{
@@ -621,6 +622,14 @@
 				"foreground": "#ACC4C7"
 			}
 		},
+		{
+			"scope": [
+				"meta.attribute.python"
+			],
+			"settings": {
+				"foreground": "#EF8160"
+			}
+		},
 		// [!] Additional tokens for highlighting in doc (semantics not supported)
 		{
 			"scope": [
@@ -672,7 +681,7 @@
 		},
 		{
 			"scope": [
-				"support.function.builtin.shell",
+				"support.function.builtin.shell"
 			],
 			"settings": {
 				"foreground": "#25BA58"
