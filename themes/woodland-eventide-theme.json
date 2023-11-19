@@ -2,7 +2,7 @@
 	"name": "Woodland Eventide",
 	"colors": {
 		"editor.background": "#1B2D2A",
-		"editor.foreground": "#efefefd0",
+		"editor.foreground": "#EFEFEFD0",
 		"badge.background": "#1446A0",
 		"menu.background": "#012622",
 		"activityBarBadge.background": "#1446A0",
@@ -80,14 +80,17 @@
 		"editorInlayHint.background": "#15418860",
 		"editorInlayHint.foreground": "#eeffff80"
 	},
-	"semanticHighlighting": {
-		"variable": "#CFD5DF",
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"keyword": "#E5C880",
+		"variable": "#EFEFEFD0",
 		"struct": "#EFB294",
 		"class": "#EFB294",
 		"class.typeHint.builtin": "#D4A7CE",
 		"typeAlias": "#D4A7CE",
 		"builtinConstant": "#D4A7CE",
-		"module": "#CFD5DFe0",
+		"module": "#B48EAD",
+		"namespace": "#EFEFEFD0",
 		"function": "#9CCAFF",
 		"function.builtin": {
 			"fontStyle": "italic"
@@ -95,11 +98,8 @@
 		"method": "#9CCAFF",
 		"property": "#C8C8FB",
 		"parameter": {
-			"foreground": "#CFD5DF",
+			"foreground": "#EFEFEFb0",
 			"fontStyle": "italic"
-		},
-		"parameter.declaration": {
-			"foreground": "#CFD5DFD0"
 		},
 		"escapeSequence": "#F78C6C"
 	},
@@ -131,16 +131,6 @@
 			],
 			"settings": {
 				"foreground": "#4CB5AE"
-			}
-		},
-		{
-			"name": "Variables",
-			"scope": [
-				"variable",
-				"string constant.other.placeholder"
-			],
-			"settings": {
-				"foreground": "#EEFFFF"
 			}
 		},
 		{
@@ -223,7 +213,6 @@
 			"name": "Functions - Missing Semantics & Doc Highlighting",
 			"scope": [
 				"entity.name.function",
-				"meta.function-call",
 				"variable.function",
 				"support.function",
 				"keyword.other.special-method",
@@ -244,26 +233,12 @@
 			}
 		},
 		{
-			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
-			"scope": [
-				"support.constant",
-				"constant.character",
-				"constant.escape",
-				"keyword.other.unit",
-				"keyword.other",
-				"support.constant.font-name.css",
-				"support.constant.color.w3c-standard-color-name.css"
-			],
-			"settings": {
-				"foreground": "#BFBDC1"
-			}
-		},
-		{
 			"scope": [
 				"variable.parameter"
 			],
 			"settings": {
-				"foreground": "#D9E5FFD0"
+				"foreground": "#D9E5FFD0",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -315,6 +290,7 @@
 				"string.source.cmake",
 				"string.quoted.multi.python",
 				"string.quoted.single.python",
+				"string.quoted.double.rust",
 				"punctuation.definition.string",
 				"string.quoted.docstring.multi.python",
 				"string.quoted.double.scss"
@@ -358,15 +334,6 @@
 			}
 		},
 		{
-			"name": "Entity Types",
-			"scope": [
-				"support.type"
-			],
-			"settings": {
-				"foreground": "#B2CCD6"
-			}
-		},
-		{
 			"name": "CSS Class and Support",
 			"scope": [
 				"source.css support.type.property-name",
@@ -378,34 +345,6 @@
 			],
 			"settings": {
 				"foreground": "#B2CCD6"
-			}
-		},
-		{
-			"name": "CSS Class and Support",
-			"scope": [
-				"meta.property-value.css"
-			],
-			"settings": {
-				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"name": "CSS Class and Support",
-			"scope": [
-				"variable.scss"
-			],
-			"settings": {
-				"foreground": "#F78C6C"
-			}
-		},
-		{
-			"name": "CSS Class and Support",
-			"scope": [
-				"punctuation.definition.keyword.scss",
-				"keyword.control.at-rule"
-			],
-			"settings": {
-				"foreground": "#7AC2D1"
 			}
 		},
 		{
@@ -569,16 +508,6 @@
 			}
 		},
 		{
-			"name": "Markdown - Plain",
-			"scope": [
-				"text.html.markdown",
-				"punctuation.definition.list_item.markdown"
-			],
-			"settings": {
-				"foreground": "#EEFFFFd0"
-			}
-		},
-		{
 			"name": "Markdown - ",
 			"scope": [
 				"punctuation.definition.markdown",
@@ -731,11 +660,15 @@
 			"name": "Markdown - Fenced Bode Block Variable",
 			"scope": [
 				"markup.raw.block.fenced.markdown",
+				"markup.table",
+				"punctuation.definition.list_item.markdown",
+				"punctuation.section.class.end",
+				"text.html.markdown",
 				"variable.language.fenced.markdown",
-				"punctuation.section.class.end"
+				"variable"
 			],
 			"settings": {
-				"foreground": "#EEFFFF"
+				"foreground": "#EEFFFFd0"
 			}
 		},
 		{
@@ -755,15 +688,6 @@
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#65737E"
-			}
-		},
-		{
-			"name": "Markup - Table",
-			"scope": [
-				"markup.table"
-			],
-			"settings": {
-				"foreground": "#EEFFFF"
 			}
 		},
 		{
