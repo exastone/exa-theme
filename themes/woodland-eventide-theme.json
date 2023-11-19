@@ -77,15 +77,26 @@
 		"gitDecoration.untrackedResourceForeground": "#CBEFB6",
 		"gitDecoration.modifiedResourceForeground": "#BEFFC7",
 		"gitDecoration.stageModifiedResourceForeground": "#0FFF95",
-		"editorInlayHint.background": "#15418860",
-		"editorInlayHint.foreground": "#eeffff80"
+		"editorInlayHint.background": "#254531a0",
+		"editorInlayHint.foreground": "#EFEFEFb0",
+		"editor.wordHighlightBackground": "#C2C8DF20"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
+		"builtinType": "#FF699B",
+		"decorator": "#65E2BA",
+		"keyword.controlFlow": "#65E2BA",
+		"enum": "#E8929E",
+		"enumMember": "#ABA5DE",
+		"method.defaultLibrary": {
+			"foreground": "#9CCAFFd0",
+			"fontStyle": "italic"
+		},
 		"keyword": "#E5C880",
 		"variable": "#EFEFEFD0",
 		"struct": "#EFB294",
 		"class": "#EFB294",
+		"macro": "#EFB294",
 		"class.typeHint.builtin": "#D4A7CE",
 		"typeAlias": "#D4A7CE",
 		"builtinConstant": "#D4A7CE",
@@ -531,8 +542,6 @@
 			"scope": [
 				"punctuation.definition.heading.markdown",
 				"punctuation.definition.list.begin.markdown",
-				"punctuation.definition.link.title.begin.markdown",
-				"punctuation.definition.link.title.end.markdown",
 				"markup.heading.setext",
 				"meta.separator.markdown"
 			],
@@ -564,8 +573,7 @@
 				"markup.bold string"
 			],
 			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#f07178"
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -579,18 +587,7 @@
 				"markup.quote markup.bold string"
 			],
 			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#f07178"
-			}
-		},
-		{
-			"name": "Markup - Underline",
-			"scope": [
-				"markup.underline"
-			],
-			"settings": {
-				"fontStyle": "underline",
-				"foreground": "#F78C6C"
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -677,16 +674,6 @@
 				"variable.language.fenced.markdown"
 			],
 			"settings": {
-				"foreground": "#65737E"
-			}
-		},
-		{
-			"name": "Markdown - Separator",
-			"scope": [
-				"meta.separator"
-			],
-			"settings": {
-				"fontStyle": "bold",
 				"foreground": "#65737E"
 			}
 		},

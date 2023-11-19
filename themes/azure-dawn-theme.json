@@ -42,7 +42,7 @@
 		"statusBar.debuggingForeground": "#ECEFF4e0",
 		"editorGroupHeader.tabsBackground": "#30456B",
 		"editorGroupHeader.noTabsBackground": "#30456B",
-		"tab.activeBackground": "#30456B",
+		"tab.activeBackground": "#1D3354A0",
 		"tab.activeBorder": "#FFCA14",
 		"tab.activeForeground": "#F2D488",
 		"tab.inactiveBackground": "#30456B",
@@ -115,7 +115,7 @@
 		"settings.modifiedItemIndicator": "#6E8EA9",
 		"settings.focusedRowBackground": "#253B7A40",
 		"settings.rowHoverBackground": "#253B7A20",
-		"textLink.foreground": "#0fff97bd",
+		"textLink.foreground": "#A4DAA8",
 		"textLink.activeForeground": "#FFCA14",
 		"textPreformat.foreground": "#FF7900",
 		"button.background": "#004E98",
@@ -210,23 +210,25 @@
 			"italic": true
 		},
 		"type.defaultLibrary": "#DAC4ED",
-		"string": "#BFB29E",
 		"function": "#BBDDFB",
+		"function.builtin": {
+			"italic": true
+		},
 		"function.defaultLibrary": {
 			"italic": true
 		},
-		"class": "#EFB294",
-		"struct": "#EFB294",
-		"module": "#CFD5DF",
-		"enum": "#D7C9AA",
-		"enumMember": "#C4BFB6",
+		"builtinType": "#FFBE9E",
+		"class": "#FFBE9E",
+		"struct": "#FFBE9E",
+		"namespace": "#CFD5DF",
+		"module": "#D9BDD4",
+		"enum": "#FDBCC4",
+		"enumMember": "#CCC8F6",
 		"property": "#C8C8FB",
-		"macro": "#EFB294",
+		"macro": "#FFBE9E",
 		"method": "#BBDDFB",
-		"method.static.defaultLibrary:swift": "#CFD5DF",
-		"method.static.defaultLibrary.library.trait": "#ACC4C7",
 		"method.defaultLibrary": {
-			"foreground": "#BBDDFB",
+			"foreground": "#BBDDFBee",
 			"italic": true
 		},
 		"variable": "#CFD5DF",
@@ -236,6 +238,7 @@
 		},
 		"number": "#FFBE9E",
 		"boolean": "#FFBE9E",
+		"escapeSequence": "#FFBE9E",
 		"formatSpecifier": {
 			"italic": true
 		},
@@ -292,15 +295,6 @@
 			}
 		},
 		{
-			"name": "Escape Characters",
-			"scope": [
-				"constant.character.escape.python"
-			],
-			"settings": {
-				"foreground": "#A9E3B1"
-			}
-		},
-		{
 			"name": "Strings - Config",
 			"scope": [
 				"string.quoted.double.json",
@@ -322,7 +316,7 @@
 				"entity.name.tag.custom.scss",
 				"entity.other.attribute-name",
 				"punctuation.section.embedded.begin.hugo",
-				"punctuation.section.embedded.end.hugo",
+				"punctuation.section.embedded.end.hugo"
 			],
 			"settings": {
 				"foreground": "#F2D488"
