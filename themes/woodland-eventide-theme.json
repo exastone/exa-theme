@@ -67,6 +67,7 @@
 		"list.hoverBackground": "#2E2F2F",
 		"list.hoverForeground": "#eeffff",
 		"list.inactiveSelectionBackground": "#003B36",
+		"list.warningForeground": "#F78C6C",
 		"minimap.background": "#1B2D2Ad0",
 		"keybindingLabel.border": "#7B7554",
 		"keybindingLabel.bottomBorder": "#7B7554",
@@ -304,7 +305,8 @@
 				"string.quoted.double.rust",
 				"punctuation.definition.string",
 				"string.quoted.docstring.multi.python",
-				"string.quoted.double.scss"
+				"string.quoted.double.scss",
+				"string.quoted.double.yaml"
 			],
 			"settings": {
 				"foreground": "#A4DAA8"
